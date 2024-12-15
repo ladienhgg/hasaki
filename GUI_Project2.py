@@ -6,7 +6,6 @@ import regex as re
 import numpy
 from underthesea import word_tokenize, pos_tag, sent_tokenize
 import warnings
-import surprise
 warnings.filterwarnings('ignore')
 
 
@@ -345,7 +344,7 @@ elif choice == 'Sentiment Analysis':
         st.write(f"Bình luận về sản phẩm {selected_danh_gia[0]} của bạn là:", danh_gia)
 
 else:
-    
+    import surprise
     # Đọc dữ liệu
     df_danh_gia = pd.read_csv('Danh_gia.csv')
     df_san_pham = pd.read_csv('San_pham.csv')
