@@ -363,7 +363,11 @@ else:
         svdpp_model = joblib.load(f)
 
     ###### Giao diện Streamlit ######
-    st.image('hasaki_banner.jpg', use_column_width=True)
+    # Hiển thị tiêu đề
+    st.title("Colaborative system for Hasaki")
+    st.write("Chào mừng bạn đến với gợi ý sản phẩm của Hasaki")
+    st.image('Banner_Hasaki.png', width=200)
+    st.write('###                      THÔNG TIN SẢN PHẨM:')
 
     # Kiểm tra xem 'selected_ma_san_pham' đã có trong session_state hay chưa
     if 'selected_ma_khach_hang' not in st.session_state:
