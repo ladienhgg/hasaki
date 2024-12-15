@@ -367,7 +367,7 @@ else:
     st.title("Colaborative system for Hasaki")
     st.write("Chào mừng bạn đến với gợi ý sản phẩm của Hasaki")
     st.image('Banner_Hasaki.png', width=200)
-    st.write('###                      THÔNG TIN SẢN PHẨM:')
+    st.write('###                      DANH SÁCH KHÁCH HÀNG:')
 
     # Kiểm tra xem 'selected_ma_san_pham' đã có trong session_state hay chưa
     if 'selected_ma_khach_hang' not in st.session_state:
