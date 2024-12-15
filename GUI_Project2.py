@@ -71,7 +71,7 @@ def remove_stopword(text, stopwords):
 
 # Load file dữ liệu
 #LOAD EMOJICON
-file = open('files/emojicon.txt', 'r', encoding="utf8")
+file = open('emojicon.txt', 'r', encoding="utf8")
 emoji_lst = file.read().split('\n')
 emoji_dict = {}
 for line in emoji_lst:
@@ -80,7 +80,7 @@ for line in emoji_lst:
 file.close()
 #################
 #LOAD TEENCODE
-file = open('files/teencode.txt', 'r', encoding="utf8")
+file = open('teencode.txt', 'r', encoding="utf8")
 teen_lst = file.read().split('\n')
 teen_dict = {}
 for line in teen_lst:
@@ -89,7 +89,7 @@ for line in teen_lst:
 file.close()
 ###############
 #LOAD TRANSLATE ENGLISH -> VNMESE
-file = open('files/english-vnmese.txt', 'r', encoding="utf8")
+file = open('english-vnmese.txt', 'r', encoding="utf8")
 english_lst = file.read().split('\n')
 english_dict = {}
 for line in english_lst:
@@ -98,12 +98,12 @@ for line in english_lst:
 file.close()
 ################
 #LOAD wrong words
-file = open('files/wrong-word.txt', 'r', encoding="utf8")
+file = open('wrong-word.txt', 'r', encoding="utf8")
 wrong_lst = file.read().split('\n')
 file.close()
 #################
 #LOAD STOPWORDS
-file = open('files/vietnamese-stopwords.txt', 'r', encoding="utf8")
+file = open('vietnamese-stopwords.txt', 'r', encoding="utf8")
 stopwords_lst = file.read().split('\n')
 file.close()
 
