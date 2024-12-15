@@ -392,8 +392,8 @@ else:
     df_score = df_tong_hop[["ma_san_pham","mo_ta","ten_san_pham"]]
     df_score['EstimateScore'] = df_score['ma_san_pham'].apply(lambda x: svdpp_model.predict(userId, x).est) # est: get EstimateScore
     df_score = df_score.sort_values(by=['EstimateScore'], ascending=False)
-    recommendations = df_score.drop_duplicates()
-
+    df_score = df_score.drop_duplicates()
+    recommendations = df_score.head(3)
 
     #df_select = df_select.join(df_title)['Name']
     #df_select.head(df_select.shape[0])
